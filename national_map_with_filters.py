@@ -8,7 +8,7 @@ DOM_FILE = "resources/all_national_data.txt"
 MAP_FILE = "index.html"
 EXCEL_FILE = "output/national_projects_data.xlsx"
 
-# === Function to extract coordinates from location string ===
+# === Function to extract coordinates from location string. ===
 def extract_coordinates(location_string):
     match = re.search(r'\(([-+]?[0-9]*\.?[0-9]+)\s*,\s*([-+]?[0-9]*\.?[0-9]+)\)', location_string)
     if match:
